@@ -5,6 +5,10 @@ import { Product } from './pages/product/product';
 import { Contact } from './pages/contact/contact';
 
 export const routes: Routes = [
+    {
+        /*Definimos ruta general o raiz en especifico que nos lleve a la ruta Home -> principal*/
+        path: "**",component: Home
+    },
     {path: "home", component: Home},
     {path: "about", component: About},
     {path: "product", component: Product},

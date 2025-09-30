@@ -1,0 +1,27 @@
+/* Titulo llamado con ID*/
+#tittle {
+    font-size: 35px;
+    text-align: center;
+}
+
+p{
+    color: gray;
+}
+/*1rem = 16px*/
+
+.card{
+    align-content: center;
+    background-color: white;
+    color: black;
+    margin: 2rem;
+}
+.btn {
+background-color: white;
+color: black;
+}
+
+.tarjetas{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}

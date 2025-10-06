@@ -21,7 +21,8 @@ color: black;
 }
 
 .tarjetas{
-    display: flex;
+    display:flex;
     justify-content: center;
     margin: 3rem;
 }
+

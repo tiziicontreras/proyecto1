@@ -1,25 +1,29 @@
-<h1 class="title">perri</h1>
+<h1 class="title">Seccion de Productos</h1>
+
+<!--
+Lg -> LARGER
+Lg: tamaño de pantalla mas grande -> PC
+
+Md -> MEDIA
+Md: tamaño de pantalla medio -> TABLET
+
+Sm -> SMALL
+Sm: tamaño de pantalla chico -> CELULAR
+-->
 <div class="container">
     <div class="row">
-        <div class="col-6">
-            <div class="card">
-                <img src="../../../assets/gettyimages-2222589873-612x612.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
+        <!--
+            ngFor -> DIRECTIVA que permite ITERAR colecciones/ arreglos
+            funcionalidad similar al "for","forEach"
 
-        </div>
-        <div class="col-6">
+            let i -> definicion de la variable que representa 1 elemento de la coleccion "infoTarjeta" (permite iterar)
+        -->
+        <div *ngFor="let i of infoTarjera" class="col-6">
             <div class="card">
-                <img src="../../../assets/71HxqwN70xL.jpg" class="card-img-top" alt="...">
+                <img src="{{ i.img}}" class="card-img-top" alt="{{ i.alt}}">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
+                    <h5 class="card-title">{{ i.titulo}}</h5>
+                    <p class="card-text">{{ i.descripcion}} - {{ i.fechaPublicacion}}</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>

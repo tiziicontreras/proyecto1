@@ -59,4 +59,11 @@ export class Product {
       }
     ]
   }
+
+  tarjetaSeleccionada: any = null;
+  
+  verMas(tarjeta:any){
+    this.tarjetaSeleccionada = tarjeta;
+  }
+
 }

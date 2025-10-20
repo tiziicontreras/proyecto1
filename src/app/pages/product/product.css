@@ -11,7 +11,9 @@
     height: 100%;
 }
 .title{
+    
     color: red;
+    text-align: center;
 }
 }
 
@@ -20,9 +22,10 @@
     .card{
         width: 100%;
     }
-.title{
+    .title{
     color: green;
-}
+    text-align: center;
+    }
 }
 
 img {

@@ -16,6 +16,7 @@ p{
     background-color: white;
     color: black;
     margin: 2rem;
+   
 }
 .btn {
 background-color: white;
@@ -26,5 +27,6 @@ color: black;
     display:flex;
     justify-content: center;
     margin: 3rem;
+
 }
 

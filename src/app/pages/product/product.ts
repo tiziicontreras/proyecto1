@@ -27,18 +27,18 @@ export class Product {
     this.infoTarjera = [
       {
         id: "1T",
-        img: "../../../assets/gettyimages-2222589873-612x612.jpg",
+        img: "../../../assets/1532179-1000-1000re.webp",
         alt: "foto",
-        titulo: "Tienda compa",
-        descripcion: "flama",
+        titulo: "Remeras",
+        descripcion: "todo tipo",
         fechaPublicacion: 2025
       },
       {
        id: "2T",
         img: "../../../assets/71HxqwN70xL.jpg",
         alt: "foto",
-        titulo: "Tienda compa",
-        descripcion: "flama",
+        titulo: "Zapatillas",
+        descripcion: "Vestir",
         fechaPublicacion: 2025 
       },
       {

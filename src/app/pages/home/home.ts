@@ -15,7 +15,7 @@ export class Home {
     
        {
         id: "1T",
-        img: "../../../assets/1532179-1000-1000re.webp",
+        img: "../../../assets/1335299-1000-1000 jordan1.webp",
         alt: "foto",
         titulo: "Remeras",
         descripcion: "todo tipo",
@@ -23,7 +23,7 @@ export class Home {
       },
       {
        id: "2T",
-        img: "../../../assets/71HxqwN70xL.jpg",
+        img: "../../../assets/155412-1000-1000 Air Force 1.webp",
         alt: "foto",
         titulo: "Zapatillas",
         descripcion: "Vestir",
@@ -31,19 +31,11 @@ export class Home {
       },
       {
         id: "3T",
-        img: "../../../assets/gettyimages-2222589873-612x612.jpg",
+        img: "../../../assets/1427563-1000-1000 waffle.webp",
         alt: "foto",
         titulo: "Tienda compa",
         descripcion: "flama",
         fechaPublicacion: 2025
-      },
-      {
-       id: "4T",
-        img: "../../../assets/71HxqwN70xL.jpg",
-        alt: "foto",
-        titulo: "Tienda compa",
-        descripcion: "flama",
-        fechaPublicacion: 2025 
       }
     
   ]

@@ -20,3 +20,8 @@ button{
     color: rgb(255, 255, 255);
     border-color: white;
 }
+
+.dropdown-menu{
+    background-color: black
+    ;
+}

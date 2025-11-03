@@ -106,7 +106,7 @@ public infoIndumentaria: Indumentaria[];
         color: "Blanco",
         titulo: "Nike Air Max 1 Premium",
         precio:269.999,
-        descripcion: "Zapatillas de Moda para Hombre",
+        descripcion: "Zapatillas de Moda para Hombre ",
         info: "Esta versión premium de los Air Max 1 le dará un toque especial a cualquier atuendo. Viene equipada con materiales mixtos, chapas decorativas y un logotipo Swoosh brillante. Y como un recordatorio amistoso, Los cordones llevan la leyenda It s not me, it's you (No soy yo, eres tú).",
       },
  

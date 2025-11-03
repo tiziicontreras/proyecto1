@@ -3,6 +3,8 @@ import { Home } from './pages/home/home';
 import { About } from './pages/about/about';
 import { Product } from './pages/product/product';
 import { Contact } from './pages/contact/contact';
+import { Zapatillas } from './pages/product/secciones/zapatillas/zapatillas';
+import { Remeras } from './pages/product/secciones/remeras/remeras';
 
 
 export const routes: Routes = [
@@ -14,5 +16,7 @@ export const routes: Routes = [
     {path: "about", component: About},
     {path: "product", component: Product},
     {path: "contact", component: Contact},
+    {path: "Zapatillas", component: Zapatillas},
+     {path: "remeras", component: Remeras},
   
 ];

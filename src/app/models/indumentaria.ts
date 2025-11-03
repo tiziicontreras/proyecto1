@@ -3,7 +3,7 @@ export interface Indumentaria {
     img: string;
     alt: string;
     titulo: string;
-    precio: string;
+    precio: number;
     color: string;
     descripcion: string;
     info: string;

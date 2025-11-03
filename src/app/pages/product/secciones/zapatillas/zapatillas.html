@@ -1,1 +1,76 @@
-<p>zapatillas works!</p>
+<h1 id="tittle">TC</h1>
+<p class="seccionZapas">Zapatillas</p>
+
+<div class="container">
+  <div class="row">
+    <!--
+            ngFor -> DIRECTIVA que permite ITERAR colecciones/ arreglos
+            funcionalidad similar al "for","forEach"
+
+            let i -> definicion de la variable que representa 1 elemento de la coleccion "infoTarjeta" (permite iterar)
+        -->
+    <div *ngFor="let i of infoIndumentaria" class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-4">
+      <div class="card">
+        <img src="{{ i.img}}" class="card-img-top nose" alt="{{ i.color}}">
+        <div class="card-body">
+          <h5 class="card-title">{{ i.titulo}}</h5>
+          <p class="card-text">{{ i.descripcion}} - {{ i.color}}</p>
+          <p class="precio">{{i.precio}}</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verMasInfo"
+            (click)="verMas(i)">
+            Ver mas
+          </button>
+        
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="verMasInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">{{tarjetaSeleccionada?.titulo}}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-img">
+                    <img src="{{tarjetaSeleccionada?.img}}" alt="{{tarjetaSeleccionada?.color}}" class="nosee">
+                </div>
+                <div class="modañ-descripcion">
+                    {{tarjetaSeleccionada?.info}}
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-contact">
+      <h3>Contacto</h3>
+      <p>¿Tienes un proyecto o consulta? Escríbeme.</p>
+      <a href="mailto:tucorreo@ejemplo.com" class="footer-link">tucorreo@ejemplo.com</a><br>
+      <a href="tel:+5491123456789" class="footer-link">+54 9 11 2345-6789</a>
+    </div>
+    <div class="footer-social">
+      <h3>Redes sociales</h3>
+      <a href="https://www.instagram.com/tiziano.contrerass_/" target="_blank" class="footer-link">instagram</a>
+      <a href="https://twitter.com/tuusuario" target="_blank" class="footer-link">Twitter</a>
+      <a href="https://github.com/tuusuario" target="_blank" class="footer-link">GitHub</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 TuNombre · Ciudad, País · Todos los derechos reservados</p>
+  </div>
+</footer>

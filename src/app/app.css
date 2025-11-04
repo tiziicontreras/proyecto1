@@ -4,9 +4,9 @@
 
 }
 .icono{
-    height: 30px;
+    height: 100%;
     width: 50px;
-    padding-right: 10px;
+   
 }
 a:hover{
     color: gray;

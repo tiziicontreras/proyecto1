@@ -5,6 +5,8 @@ import { Product } from './pages/product/product';
 import { Contact } from './pages/contact/contact';
 import { Zapatillas } from './pages/product/secciones/zapatillas/zapatillas';
 import { Remeras } from './pages/product/secciones/remeras/remeras';
+import { NewProduct } from './pages/product/secciones/new-product/new-product';
+
 
 
 export const routes: Routes = [
@@ -18,5 +20,7 @@ export const routes: Routes = [
     {path: "contact", component: Contact},
     {path: "Zapatillas", component: Zapatillas},
      {path: "remeras", component: Remeras},
+     {path: "new-product", component: NewProduct},
+
   
 ];

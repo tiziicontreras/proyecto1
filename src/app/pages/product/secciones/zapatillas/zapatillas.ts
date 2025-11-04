@@ -106,6 +106,16 @@ public infoIndumentaria: Indumentaria[];
         descripcion: "Zapatillas de Moda para Hombre",
         info: "Esta versión premium de los Air Max 1 le dará un toque especial a cualquier atuendo. Viene equipada con materiales mixtos, chapas decorativas y un logotipo Swoosh brillante. Y como un recordatorio amistoso, Los cordones llevan la leyenda It s not me, it's you (No soy yo, eres tú).",
       },
+      {
+        id: 9,
+        img: "../../../assets/AIR+JORDAN+11+RETRO+RA.avif",
+        alt:"",
+        color: "Azul",
+        titulo: "Air Jordan 11 Retro Aire raro",
+        precio:300.000,
+        descripcion: "Zapatillas de Hombre",
+        info: "El icónico AJ11 regresa —esta vez para compartir en Rare Air. Esta edición, que fusiona una variedad de cuero real y sintético y colores llamativos, se inspira en las imperfecciones encontradas en las primeras muestras de Jordan. De defectuoso a impecable—a eso lo llamamos Aire Raro.",
+      },
  
   ]
 

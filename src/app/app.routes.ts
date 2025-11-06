@@ -9,6 +9,7 @@ import { NewProduct } from './pages/product/secciones/new-product/new-product';
 
 
 
+
 export const routes: Routes = [
     {
         /*Definimos ruta general o raiz en especifico que nos lleve a la ruta Home -> principal*/
@@ -20,7 +21,8 @@ export const routes: Routes = [
     {path: "contact", component: Contact},
     {path: "Zapatillas", component: Zapatillas},
      {path: "remeras", component: Remeras},
-     {path: "new-product", component: NewProduct},
+    {path: "new-product", component: NewProduct},
+    
 
   
 ];

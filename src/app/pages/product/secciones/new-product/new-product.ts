@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Indumentaria } from '../../../../models/indumentaria';
-import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Product } from '../../product';
+import { Registrarse } from '../../../../models/registrarse';
+import { FormControl, FormGroup, NonNullableFormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+
 
 
 /*
@@ -19,42 +19,40 @@ import { Product } from '../../product';
 })
 export class NewProduct {
 /* Propiedades PRIVADA -> informacion sensible */
-
   private contadorId= 1;
+
   /* Coleccion de productos de tipo PRODUCTO */
-  coleccionProductos: Indumentaria[] = [];
+  coleccionProductos: Registrarse[] = [];
+
+
   /* Instancia que se vincula con el formulario desde el HTML */
   /* nombrePropiedad: new Control ->
   string -> "" / number -> null
   Validators.required -> validado como valor requerido estrictamente
   */
-  nuevoProducto = new FormGroup ({
+
+
+  nuevoFormulario = new FormGroup ({
+    email: new FormControl("",Validators.required),
     nombre: new FormControl ("",Validators.required),
-    descripcion: new FormControl("",Validators.required),
-    precio: new FormControl(null, Validators.required),
-    img:new FormControl(""),
-    alt:new FormControl(""),
+    contraseña: new FormControl("", Validators.required),
   });
   
   /**  
    @description Metodo de creacion de productos segun interfaz de "producto"
   **/
-  crearProducto(): void{
-    if(this.nuevoProducto.valid){
-      const nuevoProducto: Indumentaria = {
-        /* Id ->asignamos contador para que sea autoincrementable */
-        id: this.contadorId++,
-        /* 
-        resto de propiedades, asignamos desde el formulario el valor
-        que recibio desde su casilla o formControlName
-        */
-        nombre: this.nuevoProducto.value.nombre!,
-        
+  enviarformulario(): void{
+    if(this.nuevoFormulario.valid){
+      const nuevoFormulario: Registrarse = {
+        nombre:this.nuevoFormulario.value.nombre!,
+        /* apellido: this.nuevoFormulario.value.apellido!, */
+        email: this.nuevoFormulario.value.email!,
+        contraseña: this.nuevoFormulario.value.contraseña!
+      
       }
-      this.coleccionProductos.push(nuevoProducto);
-      console.log("Producto agregado: ", nuevoProducto );
-      console.log("Coleccion actaul de productos: ",this.coleccionProductos);
-      this.nuevoProducto.reset()
+      this.coleccionProductos.push(nuevoFormulario);
+      console.log("Registro enviado");
+      this.nuevoFormulario.reset()
     }
   }
 }

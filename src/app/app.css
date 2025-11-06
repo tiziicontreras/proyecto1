@@ -1,8 +1,12 @@
 .navbar{
     background-color: rgb(0, 0, 0) !important;
     transition: background-color 3s gray; /* animación suave */
-
 }
+
+.Registrate {
+    padding-right: 20px;
+}
+
 .icono{
     height: 100%;
     width: 50px;

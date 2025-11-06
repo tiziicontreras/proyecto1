@@ -1,30 +1,33 @@
 <div class="container">
-    <h2>Nuevo Producto</h2>
+    <h2>¡Unete a <span>Nike</span>!</h2>
 
     <!-- Inserto etiqueta "formGroup" para crear un formulario y la igualo a su nombre
     [formGroup] -> FIRECTIVA de formularios reactivos 
     -->
-    <form [formGroup]="nuevoProducto" (ngSubmit)="crearProducto()">
+    <form [formGroup]="nuevoFormulario" (ngSubmit)="enviarformulario()">
 
-        <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            <!-- formControName -> atributo que vincule con la informacion de mi propiedad -->
-            <input id="nombre" type="text" class="form-control" formControlName="nombre">
+        <div class="formGroup">
+            <label for="email">E-mail</label>
+            <input id ="email" type="text" placeholder="correo@ejemplo.com" formControlName="email">
+
         </div>
 
-        <div class="mb-3">
-            <label for="descripcion" class="form-label">Descripcion</label>
-            <input id="descripcion" type="text" class="form-control" formControlName="descripcion">
-        </div>
+        <div class="formGroup">
+            <label for="nombre">Nombre</label>
+            <input id="nombre"type="text" placeholder="Tu nombre" formControlName="nombre">
+            <div class="formGroup">
+                <label for="apellido">Apellido</label>
+                <input id="apellido"type="text" placeholder="Tu apellido" formControlName="apellido">
+            </div>
 
-        <div class="mb-3">
-            <label for="precio" class="form-label">Precio</label>
-            <input id="precio" type="text" class="form-control" formControlName="precio">
+            <div class="formGroup">
+                <label for="contraseña">Contraseña</label>
+                <input id="contra"type="password" placeholder="**********" formControlName="contraseña">
+            </div>
+
+            <button type="submit" [disabled]="!nuevoFormulario.valid">
+                Enviar
+            </button>
         </div>
-        <!--    El boton se desabilita cuando el "nuevoProducto" no es valido
-                ej: faltan campos por rellenar o no cumplen el valor esperado    
-        -->
-        <button type="submit" class="btn btn-primary w-100" [disabled]="nuevoProducto">Guardar</button>
     </form>
 </div>
-

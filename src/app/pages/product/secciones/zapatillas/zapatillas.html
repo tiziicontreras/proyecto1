@@ -15,7 +15,7 @@
         <div class="card-body">
           <h5 class="card-title">{{ i.titulo}}</h5>
           <p class="card-text">{{ i.descripcion}} - {{ i.color}}</p>
-          <p class="precio">{{i.precio}}</p>
+          <p class="precio">${{i.precio}}</p>
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verMasInfo"
             (click)="verMas(i)">
             Ver mas

@@ -1,3 +1,4 @@
+// Definimos una interfaz llamada 'Tarjeta'
 export interface Tarjeta {
     id: string; //numeros como letras -> ej : 123AB / 123 / ABC
     img: string;

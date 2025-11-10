@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Indumentaria } from '../../models/indumentaria';
+import { Indumentaria } from '../../models/indumentaria';// Importa la interfaz o clase 'Indumentaria' desde la carpeta models
 
 @Component({
   selector: 'app-home',
@@ -9,9 +9,11 @@ import { Indumentaria } from '../../models/indumentaria';
   styleUrl: './home.css'
 })
 export class Home {
+  // Definimos un arreglo llamado infoIndumentaria que contendrá objetos del tipo Indumentaria
  public infoIndumentaria: Indumentaria[];
 
  constructor(){
+      // Inicializamos el arreglo infoIndumentaria con los objetos que representan productos
   this.infoIndumentaria = [
     
        {
@@ -23,7 +25,7 @@ export class Home {
         precio: 249.999,
         descripcion: "Zapatillas Jordan para Hombre",
         info: "Esta nueva versión de los AJ1 aporta nueva energía a los tonos neutros. El cuero suave y premium y la clásica amortiguación Nike Air te brindan la calidad y la comodidad que esperas de Jordan."
-
+        
 
       },
       {
@@ -86,16 +88,27 @@ export class Home {
         descripcion: "Remera de Fútbol para Hombre",
         info:"Total 90 ha vuelto. Esta remera de algodón suave canaliza la energía de principios de los 2000 de los icónicos kits de fútbol de Nike."
       },
-      {
+           {
         id: 8,
-        img: "../../../assets/tech1577734-1000-1000.webp",
-        alt: "",
-        color: "Oliva Neutro",
-        titulo: "Nike Tech",
-        precio: 0,
-        descripcion: "Campera de Moda para Hombre",
-        info:"El look resistente de una chamarra de fatiga camuflajeada recibe una actualización técnica. Nuestra versión está confeccionada con una mezcla de tela de nylon fresca y arrugada que absorbe el sudor y es ligeramente elástica. La articulación en los codos y los cordones elásticos en el dobladillo y el gorro se combinan para crear una comodidad versátil."
+        img: "../../../assets/js1387969-800-800.webp",
+        alt:"",
+        color: "Azul V",
+        titulo: "Jordan Sport",
+        precio:69.999,
+        descripcion: "Remera Jordan para Hombre",
+        info: "Esta es una remera que está hecha para ir por todo. Está confeccionada con una mezcla de algodón suave mejorada con tecnología absorbente de transpiración para mantener la frescura tanto al levantarte como al relajarte.",
+      },
+      {
+        id: 9,
+        img: "../../../assets/Esse1527510-800-800.png",
+        alt:"",
+        color: "Militar",
+        titulo: "Nike Sportswear Premium Essentials",
+        precio:76.999,
+        descripcion: "Remera de Moda para Hombre",
+        info: "La remera Nike Sportswear Premium essentials ofrece un ajuste suelto para brindar un look desenfadado y cómodo. Su tela de algodón orgánico de alta densidad se siente gruesa y suave. Este producto está confeccionado con al menos un 75% de fibras de algodón orgánico.",
       }
+
  
   ]
 

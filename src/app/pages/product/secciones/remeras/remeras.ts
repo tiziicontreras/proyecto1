@@ -88,27 +88,7 @@ public infoIndumentaria: Indumentaria[];
         precio:49.999,
         descripcion: "Remera de Moda para Hombre",
         info: "UN OPCIÓN INTELIGENTE PARA TU ACTIVIDAD DIARIA. La remera Nike Sportswear esta confeccionada con nuestra tela de algodón de uso diario en un ajuste clasico que brinda una sensación familiar desde el primer uso.El logotipo de Futura bordado en el pecho te brinda un estilo Nike distintivo.",
-      },
-      {
-        id: 8,
-        img: "../../../assets/Dunk1310226-800-800.webp",
-        alt:"",
-        color: "Verde",
-        titulo: "Nike Dunk Low Retro",
-        precio:259.999,
-        descripcion: "Zapatillas de Moda para Hombre",
-        info: "Siempre puedes contar con un clásico. Los Dunk Low combinan un icónico diseño de colores contrastantes con materiales premium y un acolchado suave para ofrecer una comodidad duradera que cambia las reglas del juego. Tú eliges el look.",
-      },
-      {
-        id: 9,
-        img: "../../../assets/Max1P1391196-800-800.webp",
-        alt:"",
-        color: "Blanco",
-        titulo: "Nike Air Max 1 Premium",
-        precio:269.999,
-        descripcion: "Zapatillas de Moda para Hombre ",
-        info: "Esta versión premium de los Air Max 1 le dará un toque especial a cualquier atuendo. Viene equipada con materiales mixtos, chapas decorativas y un logotipo Swoosh brillante. Y como un recordatorio amistoso, Los cordones llevan la leyenda It s not me, it's you (No soy yo, eres tú).",
-      },
+      }
  
   ]
 

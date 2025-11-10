@@ -1,20 +1,53 @@
-.container{
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
+.tittle {
+    font-size: 55px;
+    text-align: center;
+    
+
 }
 
-/*Patalla de computadora*/
-@media (min-width: 751px){
-.card{
-    width: 100%;
-    height: 100%;
+p{
+    color: gray;
 }
-.title{
-    
-    color: red;
-    text-align: center;
+/*1rem = 16px*/
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    align-content: center;
+    background-color: white;
+    color: black;
+    margin: 2rem;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer; /* hace parecer que se puede interactuar */
 }
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Cuando se hace click (efecto “presionado”) */
+.card:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+
+.btn {
+background-color: white;
+color: black;
+border-color: black;
+ display: block;
+   margin: 5px auto; /* auto centra horizontalmente */
+}
+
+
+.container{
+    display: flex;
+   justify-content: center;
+    padding: 1rem;
 }
 
 /*Pantalla de Celular*/
@@ -28,7 +61,59 @@
     }
 }
 
-img {
-    height: 8rem;
-    object-fit: cover;
+.nosee{
+    width: 100%;
+    height: 450px;
+    margin: 0PX;
+
 }
+
+.site-footer {
+  background-color: #111111;
+  color: #FFFFFF;
+  padding: 40px 20px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.footer-contact,
+.footer-social {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+.footer-contact h3,
+.footer-social h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  color: #fff;
+}
+.footer-link {
+  color: #f0f0f0;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-link:hover {
+  color: #1abc9c;
+}
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 0.9em;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+}
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-contact,
+  .footer-social {
+    margin: 20px 0;
+  }
+}
+

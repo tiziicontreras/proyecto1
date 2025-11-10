@@ -1,5 +1,82 @@
-.info{
+/* ======= ESTILO GENERAL ======= */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* ======= CONTENEDOR PRINCIPAL ======= */
+.info {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ======= TÍTULO PRINCIPAL ======= */
+.info h1 {
     text-align: center;
+    font-size: 2.2rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+/* ======= FECHA ======= */
+.info > p strong {
+    color: #000;
+}
+
+.info > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* ======= SUBTÍTULOS ======= */
+.info h2 {
+    color: gray;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    border-left: 4px solid gray;
+    padding-left: 10px;
+}
+
+/* ======= PÁRRAFOS ======= */
+.info p {
+    text-align: justify;
+    margin-top: 10px;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* ======= ENLACES ======= */
+.info a {
+    color: gray;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 768px) {
+    .info {
+        padding: 25px;
+    }
+
+    .info h1 {
+        font-size: 1.8rem;
+    }
+
+    .info h2 {
+        font-size: 1.2rem;
+    }
 }
 
 

@@ -2,17 +2,36 @@
     <h2>¡Unete a <span>Nike</span>!</h2>
 
     <!-- Inserto etiqueta "formGroup" para crear un formulario y la igualo a su nombre
-    [formGroup] -> FIRECTIVA de formularios reactivos 
+    [formGroup] -> DIRECTIVA de formularios reactivos 
+    -->
+
+    <!-- 
+    Formulario reactivo:
+    - [formGroup]="nuevoFormulario" -> Vincula el formulario con la propiedad 'nuevoFormulario' definida en el componente.
+    - (ngSubmit)="enviarformulario()" -> Ejecuta la función 'enviarformulario()' cuando el formulario se envía.
     -->
     <form [formGroup]="nuevoFormulario" (ngSubmit)="enviarformulario()">
-
+          <!-- Grupo de formulario para el campo de email -->
         <div class="formGroup">
+
+
             <label for="email">E-mail</label>
+
+
+            <!-- 
+            Input para email:
+            - id="email" -> Relaciona el label con el input.
+            - placeholder -> Texto guía dentro del input.
+            - formControlName="email" -> Conecta este input con el control 'email' en 'nuevoFormulario'.
+            -->
             <input id ="email" type="text" placeholder="correo@ejemplo.com" formControlName="email">
 
         </div>
 
+
+         <!-- Grupo de formulario para el campo nombre -->
         <div class="formGroup">
+
             <label for="nombre">Nombre</label>
             <input id="nombre"type="text" placeholder="Tu nombre" formControlName="nombre">
             <div class="formGroup">
@@ -25,6 +44,7 @@
                 <input id="contra"type="password" placeholder="**********" formControlName="contraseña">
             </div>
 
+             <!-- [disabled]="!nuevoFormulario.valid" -> Solo habilita el botón si todos los campos del formulario son válidos -->
             <button type="submit" [disabled]="!nuevoFormulario.valid">
                 Enviar
             </button>

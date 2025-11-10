@@ -15,13 +15,31 @@ p{
 }
 /*1rem = 16px*/
 
-.card{
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     align-content: center;
     background-color: white;
     color: black;
     margin: 2rem;
-   
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer; /* hace parecer que se puede interactuar */
 }
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Cuando se hace click (efecto “presionado”) */
+.card:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+
 .btn {
 background-color: white;
 color: black;
@@ -35,10 +53,7 @@ color: black;
     
 }
 
-.container:hover {
-      transform: scale(1.08);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-    }
+
 
 /*Pantalla de Celular*/
 @media (max-width: 750px){

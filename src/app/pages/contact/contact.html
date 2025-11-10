@@ -1,11 +1,27 @@
 <div class="contacto">
 
-    <h2>Contactanos</h2>
-        <p>¿Tenés dudas, consultas o querés comprar por WhatsApp? Escribinos:</p>
-        
-        <ul>
-          <li>📱 WhatsApp: <a href="https://wa.me/54xxxxxxxxx" target="_blank">+54 XXXXXXXXX</a></li>
-          <li>📸 Instagram: <a href="https://instagram.com/tuusuario" target="_blank">@tuusuario</a></li>
-          <li>✉️ Correo: contacto@tczapatillas.com</li>
-        </ul>
+    <div class="contacto">
+        <h1>Contacto</h1>
+        <p>¿Tenés dudas, consultas o querés comunicarte con nosotros? Completá el siguiente formulario o escribinos directamente.</p>
+
+        <form action="#" method="post">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribí tu mensaje aquí..." required></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+
+        <div class="info-extra">
+            <h2>También podés contactarnos:</h2>
+            <p>📧 <a href="mailto:correo@tutienda.com">contacto@tutienda.com</a></p>
+            <p>📞 +54 9 11 5555-5555</p>
+            <p>📍 Av. Sta. Fe 1681, C1061AAS Cdad. Autónoma de Buenos Aires, Argentina</p>
+        </div>
+    </div>
 </div>

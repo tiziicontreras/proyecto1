@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Tarjeta } from '../../models/tarjeta';
+import { Indumentaria } from '../../models/indumentaria';
 
 
 @Component({
@@ -14,7 +14,7 @@ export class Product {
   Propiedad PUBLICA: Libre acceso a su contenido
     Propiedad PRIVADA: Contenido restringido
   */
-  public infoTarjera: Tarjeta[];
+  public infoIndumentaria: Indumentaria[];
 
   /* 
   Declaramos coleccion de tarjetas en base a modelo de interfaz "Tarjeta"
@@ -24,39 +24,255 @@ export class Product {
   */
 
   constructor(){
-    this.infoTarjera = [
-      {
-        id: "1T",
-        img: "../../../assets/1532179-1000-1000re.webp",
-        alt: "foto",
-        titulo: "Remeras",
-        descripcion: "todo tipo",
-        fechaPublicacion: 2025
+    this.infoIndumentaria = [
+
+       {
+        id: 1,
+        img: "../../../assets/j1237558-800-800.webp",
+        alt: "",
+        color: "Blanco",
+        titulo: "Jordan",
+        precio: 65.999,
+        descripcion: "Remera Jordan para Hombre",
+        info: "Confeccionada con algodón suave, esta remera clásica pone los gráficos de herencia de Jordan al frente y en el centro. "
+
+
       },
       {
-       id: "2T",
-        img: "../../../assets/71HxqwN70xL.jpg",
-        alt: "foto",
-        titulo: "Zapatillas",
-        descripcion: "Vestir",
-        fechaPublicacion: 2025 
+       id: 2,
+        img: "../../../assets/Rare1334066-800-800.webp",
+        alt: "",
+        color: "Royal",
+        titulo: "Jordan Rare Air",
+        precio: 109.999,
+        descripcion: "Remera Jordan para Hombre",
+        info:"Celebra las imperfecciones que nos hacen únicos con la colección Rare Air de Jordan. Confeccionada con algodón de densidad alta, esta remera de manga corta estructurada combina detalles desgastados con un lavado uniforme para lograr un look perfectamente usado.",
       },
       {
-        id: "3T",
-        img: "../../../assets/gettyimages-2222589873-612x612.jpg",
-        alt: "foto",
-        titulo: "Tienda compa",
-        descripcion: "flama",
-        fechaPublicacion: 2025
+        id: 3,
+        img: "../../../assets/Chica1336958-800-800.webp",
+        alt: "",
+        color: "Rojo",
+        titulo: "Chicago Bulls Essential",
+        precio: 65.999,
+        descripcion: "Remera de Basquet para Hombre",
+        info: "Hogar, dulce hogar. Anima a tu equipo con esta remera de algodón suave de los Bulls.",
       },
       {
-       id: "4T",
-        img: "../../../assets/71HxqwN70xL.jpg",
-        alt: "foto",
-        titulo: "Tienda compa",
-        descripcion: "flama",
-        fechaPublicacion: 2025 
-      }
+        id: 4,
+        img: "../../../assets/spo1236455-800-800.webp",
+        alt:"",
+        color: "Azul",
+        titulo: "Nike Sportswear",
+        precio:54.999,
+        descripcion: "Remera de Moda para Hombre",
+        info: "La remera Nike Sportswear es una prenda de algodón suave que lleva un logotipo clásico en el pecho.",
+      },
+      {
+        id: 5,
+        img: "../../../assets/js1387969-800-800.webp",
+        alt:"",
+        color: "Azul V",
+        titulo: "Jordan Sport",
+        precio:69.999,
+        descripcion: "Remera Jordan para Hombre",
+        info: "Esta es una remera que está hecha para ir por todo. Está confeccionada con una mezcla de algodón suave mejorada con tecnología absorbente de transpiración para mantener la frescura tanto al levantarte como al relajarte.",
+      },
+      {
+        id: 6,
+        img: "../../../assets/Esse1527510-800-800.png",
+        alt:"",
+        color: "Militar",
+        titulo: "Nike Sportswear Premium Essentials",
+        precio:76.999,
+        descripcion: "Remera de Moda para Hombre",
+        info: "La remera Nike Sportswear Premium essentials ofrece un ajuste suelto para brindar un look desenfadado y cómodo. Su tela de algodón orgánico de alta densidad se siente gruesa y suave. Este producto está confeccionado con al menos un 75% de fibras de algodón orgánico.",
+      },
+      {
+        id: 7,
+        img: "../../../assets/clu489910-1000-1000.webp",
+        alt:"",
+        color: "Rosa",
+        titulo: "Nike Sportswear Club",
+        precio:49.999,
+        descripcion: "Remera de Moda para Hombre",
+        info: "UN OPCIÓN INTELIGENTE PARA TU ACTIVIDAD DIARIA. La remera Nike Sportswear esta confeccionada con nuestra tela de algodón de uso diario en un ajuste clasico que brinda una sensación familiar desde el primer uso.El logotipo de Futura bordado en el pecho te brinda un estilo Nike distintivo.",
+      },
+       {
+        id: 8,
+        img: "../../../assets/j1237558-800-800.webp",
+        alt: "",
+        color: "Blanco",
+        titulo: "Jordan",
+        precio: 65.999,
+        descripcion: "Remera Jordan para Hombre",
+        info: "Confeccionada con algodón suave, esta remera clásica pone los gráficos de herencia de Jordan al frente y en el centro. "
+
+
+      },
+      {
+       id: 9,
+        img: "../../../assets/Rare1334066-800-800.webp",
+        alt: "",
+        color: "Royal",
+        titulo: "Jordan Rare Air",
+        precio: 109.999,
+        descripcion: "Remera Jordan para Hombre",
+        info:"Celebra las imperfecciones que nos hacen únicos con la colección Rare Air de Jordan. Confeccionada con algodón de densidad alta, esta remera de manga corta estructurada combina detalles desgastados con un lavado uniforme para lograr un look perfectamente usado.",
+      },
+      {
+        id: 10,
+        img: "../../../assets/Chica1336958-800-800.webp",
+        alt: "",
+        color: "Rojo",
+        titulo: "Chicago Bulls Essential",
+        precio: 65.999,
+        descripcion: "Remera de Basquet para Hombre",
+        info: "Hogar, dulce hogar. Anima a tu equipo con esta remera de algodón suave de los Bulls.",
+      },
+      {
+        id: 11,
+        img: "../../../assets/spo1236455-800-800.webp",
+        alt:"",
+        color: "Azul",
+        titulo: "Nike Sportswear",
+        precio:54.999,
+        descripcion: "Remera de Moda para Hombre",
+        info: "La remera Nike Sportswear es una prenda de algodón suave que lleva un logotipo clásico en el pecho.",
+      },
+      {
+        id: 12,
+        img: "../../../assets/js1387969-800-800.webp",
+        alt:"",
+        color: "Azul V",
+        titulo: "Jordan Sport",
+        precio:69.999,
+        descripcion: "Remera Jordan para Hombre",
+        info: "Esta es una remera que está hecha para ir por todo. Está confeccionada con una mezcla de algodón suave mejorada con tecnología absorbente de transpiración para mantener la frescura tanto al levantarte como al relajarte.",
+      },
+      {
+        id: 15,
+        img: "../../../assets/Esse1527510-800-800.png",
+        alt:"",
+        color: "Militar",
+        titulo: "Nike Sportswear Premium Essentials",
+        precio:76.999,
+        descripcion: "Remera de Moda para Hombre",
+        info: "La remera Nike Sportswear Premium essentials ofrece un ajuste suelto para brindar un look desenfadado y cómodo. Su tela de algodón orgánico de alta densidad se siente gruesa y suave. Este producto está confeccionado con al menos un 75% de fibras de algodón orgánico.",
+      },
+      {
+        id: 13,
+        img: "../../../assets/clu489910-1000-1000.webp",
+        alt:"",
+        color: "Rosa",
+        titulo: "Nike Sportswear Club",
+        precio:49.999,
+        descripcion: "Remera de Moda para Hombre",
+        info: "UN OPCIÓN INTELIGENTE PARA TU ACTIVIDAD DIARIA. La remera Nike Sportswear esta confeccionada con nuestra tela de algodón de uso diario en un ajuste clasico que brinda una sensación familiar desde el primer uso.El logotipo de Futura bordado en el pecho te brinda un estilo Nike distintivo.",
+      },
+        {
+        id: 14,
+        img: "../../../assets/1335299-1000-1000 jordan1.webp",
+        alt: "",
+        color: "Gris",
+        titulo: "Jordan 1 Low SE",
+        precio: 249.999,
+        descripcion: "Zapatillas Jordan para Hombre",
+        info: "Esta nueva versión de los AJ1 aporta nueva energía a los tonos neutros. El cuero suave y premium y la clásica amortiguación Nike Air te brindan la calidad y la comodidad que esperas de Jordan."
+
+
+      },
+      {
+       id: 15,
+        img: "../../../assets/155412-1000-1000 Air Force 1.webp",
+        alt: "",
+        color: "Blanco",
+        titulo: "Air Force 1 '07",
+        precio: 209.999,
+        descripcion: "Zapatillas de Moda para Hombre",
+        info:"El resplandor vive en el Nike Air Force 1 ’07, el OG de básquetbol que le da un toque fresco a lo que mejor conoces: revestimientos con costuras duraderas, acabados impecables y la cantidad perfecta de destellos para que brilles.",
+      },
+      {
+        id: 16,
+        img: "../../../assets/1427563-1000-1000 waffle.webp",
+        alt: "",
+        color: "Azul",
+        titulo: "Nike Air Max Waffle SP",
+        precio: 269.999,
+        descripcion: "Zapatillas de Moda para Hombre",
+        info: "Los Air Max Waffle fusionan dos de las zapatillas más revolucionarios de Nike para crear un nuevo diseño audaz basado en la herencia. Toman la entresuela exclusiva y la experiencia Tuned Air de los Air Max Plus y las combinan con la parte superior ligera y la suela tipo waffle de los famosos zapatillas de entrenamiento Waffle de la era de auge del running de los años 70, una época en la que la posición de Nike ganaba terreno a cada paso.",
+      },
+      {
+        id: 17,
+        img: "../../../assets/1218360-1000-1000.webp",
+        alt:"",
+        color: "Negro",
+        titulo: "Nike Pegasus Trail 5",
+        precio:259.999,
+        descripcion: "Zapatillas de Trail para Hombre",
+        info: "Despliega tus alas y observa lo que te depara la naturaleza mientras recorrés caminos de tierra con los Peg Trail 5. Ahora equipados con una entresuela de espuma ReactX Foam ultrarresponsiva, estos zapatillas son una verdadera amenaza doble, ansiosa por cruzar la línea que separa la tierra de las pistas.",
+      },
+      {
+        id: 18,
+        img: "../../../assets/1457792-1000-1000.webp",
+        alt:"",
+        color: "Marfil P",
+        titulo: "Air Jordan 1 Low Premium",
+        precio:229.999,
+        descripcion: "Zapatillas Jordan para Hombre",
+        info: "Inspirados en los originales que se lanzaron en 1985, los Air Jordan 1 Low Premium ofrecen un estilo clásico impecable que se ve familiar, pero siempre viene renovado. Con un diseño icónico que combina a la perfección con cualquier look, Estas zapatillas garantizan que siempre lucirás excelente.",
+      },
+      {
+        id: 19,
+        img: "../../../assets/Max1066708-1000-1000.webp",
+        alt:"",
+        color: "coco",
+        titulo: "Nike Air Max 1",
+        precio:249.999,
+        descripcion: "Zapatillas de Moda para Hombre",
+        info: "Conoce al líder de la manada. Inspirado en la arquitectura francesa, célebre en el deporte y amado por la moda, son los primeros zapatillas de la familia que dio fama al diseño Air en el mundo. Con un look trepidante, una amortiguación de eficacia demostrada y una protección antilodo clásica ondulada, no es de extrañar que haya reinado de manera indiscutible desde 1987.",
+      },
+      {
+        id: 20,
+        img: "../../../assets/Force845611-800-800.webp",
+        alt:"",
+        color: "Negro",
+        titulo: "Nike Air Force 1 '07 Pro-Tech",
+        precio:299.999,
+        descripcion: "Zapatillas de Moda para Hombre",
+        info: "El resplandor vive en el Air Force 1 '07 Pro-Tech, el original de básquetbol que le da un nuevo giro a lo que mejor conoces. Monocromática de arriba a abajo, esta versión tiene materiales impermeables para que puedas salir con estilo sin importar el clima.",
+      },
+      {
+        id: 21,
+        img: "../../../assets/Dunk1310226-800-800.webp",
+        alt:"",
+        color: "Verde",
+        titulo: "Nike Dunk Low Retro",
+        precio:259.999,
+        descripcion: "Zapatillas de Moda para Hombre",
+        info: "Siempre puedes contar con un clásico. Los Dunk Low combinan un icónico diseño de colores contrastantes con materiales premium y un acolchado suave para ofrecer una comodidad duradera que cambia las reglas del juego. Tú eliges el look.",
+      },
+      {
+        id: 22,
+        img: "../../../assets/Max1P1391196-800-800.webp",
+        alt:"",
+        color: "Blanco",
+        titulo: "Nike Air Max 1 Premium",
+        precio:269.999,
+        descripcion: "Zapatillas de Moda para Hombre",
+        info: "Esta versión premium de los Air Max 1 le dará un toque especial a cualquier atuendo. Viene equipada con materiales mixtos, chapas decorativas y un logotipo Swoosh brillante. Y como un recordatorio amistoso, Los cordones llevan la leyenda It s not me, it's you (No soy yo, eres tú).",
+      },
+      {
+        id: 23,
+        img: "../../../assets/AIR+JORDAN+11+RETRO+RA.avif",
+        alt:"",
+        color: "Azul",
+        titulo: "Air Jordan 11 Retro Aire raro",
+        precio:300.000,
+        descripcion: "Zapatillas de Hombre",
+        info: "El icónico AJ11 regresa —esta vez para compartir en Rare Air. Esta edición, que fusiona una variedad de cuero real y sintético y colores llamativos, se inspira en las imperfecciones encontradas en las primeras muestras de Jordan. De defectuoso a impecable—a eso lo llamamos Aire Raro.",
+      },
+     
     ]
   }
 

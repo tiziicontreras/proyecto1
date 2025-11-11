@@ -1,0 +1,185 @@
+/* ====== CONTENEDOR DEL CARRUSEL ====== */
+#carouselZapatillas {
+    max-width: 1200px;        /* ancho máximo */
+    margin: 50px auto;        /* centrado y separación */
+    border-radius: 15px;      /* bordes redondeados */
+    overflow: hidden;         /* oculta bordes sobresalientes */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+.tipo{
+    color: orangered;
+}
+
+#carouselZapatillas img{
+     height: 25rem;
+ object-fit: contain;
+}
+
+/* ====== IMÁGENES ====== */
+.carousel-inner img {
+    width: 100%;
+    height: 500px;             /* altura fija (ajustable) */
+    object-fit: cover;         /* recorte elegante de imágenes */
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Efecto zoom suave al pasar el mouse */
+.carousel-inner img:hover {
+    transform: scale(1.03);
+}
+
+/* ====== CONTROLES (flechas) ====== */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 20px;
+    background-size: 60% 60%;
+    transition: background-color 0.3s;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* ====== BOTONES DE CONTROL ====== */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* ====== INDICADORES (puntitos) ====== */
+.carousel-indicators [data-bs-target] {
+    background-color: #c62828; /* color principal */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    #carouselExample {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .carousel-inner img {
+        height: 300px;
+    }
+}
+.ofer {
+    padding: 10px;
+    
+}
+
+p{
+       font-size: 55px;
+    text-align: center;
+    
+
+    color: gray;
+}
+
+
+
+
+
+/* Animación de brillo/pulsación */
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 10px rgba(255, 77, 77, 0.6); }
+  50% { transform: scale(1.05); box-shadow: 0 0 20px rgba(255, 153, 0, 0.8); }
+  100% { transform: scale(1); box-shadow: 0 0 10px rgba(255, 77, 77, 0.6); }
+}
+
+
+
+#carouselZapatillas .carousel-control-prev:hover,
+#carouselZapatillas .carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#carouselZapatillas .carousel-control-prev-icon,
+#carouselZapatillas .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 576px) {
+  #carouselZapatillas {
+    max-width: 90%;
+  }
+
+  #carouselZapatillas .ofer {
+    font-size:50PX ;
+    padding: 8px 14px;
+  }
+}
+
+/* ----- CONTENEDOR DEL CARRUSEL ----- */
+#carouselRemeras {
+  position: relative;
+  max-width: 600px; /* puedes ajustar el tamaño */
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+}
+
+/* ----- IMÁGENES ----- */
+#carouselRemeras img {
+ height: 25rem;
+ object-fit: contain;
+}
+
+#carouselRemeras .carousel-item.active img {
+  transform: scale(1.02); /* efecto sutil de enfoque */
+}
+
+
+/* ----- BOTONES DE NAVEGACIÓN ----- */
+#carouselRemeras .carousel-control-prev-icon,
+#carouselRemeras .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 10px;
+  background-size: 60%;
+}
+
+#carouselRemeras .carousel-control-prev,
+#carouselRemeras .carousel-control-next {
+  width: 8%;
+}
+
+#carouselRemeras .carousel-control-prev:hover .carousel-control-prev-icon,
+#carouselRemeras .carousel-control-next:hover .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 768px) {
+  #carouselRemeras {
+    max-width: 100%;
+  }
+
+  #carouselRemeras .carousel-item img {
+    height: 300px;
+  }
+
+  #carouselRemeras .ofer {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+}

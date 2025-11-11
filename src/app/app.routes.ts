@@ -6,6 +6,7 @@ import { Contact } from './pages/contact/contact';
 import { Zapatillas } from './pages/product/secciones/zapatillas/zapatillas';
 import { Remeras } from './pages/product/secciones/remeras/remeras';
 import { NewProduct } from './pages/product/secciones/new-product/new-product';
+import { Oferta } from './pages/oferta/oferta';
 
 
 
@@ -22,7 +23,7 @@ export const routes: Routes = [
     {path: "Zapatillas", component: Zapatillas},
      {path: "remeras", component: Remeras},
     {path: "new-product", component: NewProduct},
-    
+    {path: "oferta", component: Oferta}
 
   
 ];

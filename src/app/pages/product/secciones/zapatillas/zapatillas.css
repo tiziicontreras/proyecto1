@@ -128,3 +128,15 @@ border-color: black;
 .precio {
     color: #111111;
 }
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    #carouselExample {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .carousel-inner img {
+        height: 300px;
+    }
+}

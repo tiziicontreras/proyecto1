@@ -31,11 +31,14 @@ export class NewProduct {
   Validators.required -> validado como valor requerido estrictamente
   */
 
-
+// FormControl -> representa un campo individual dentro de un formulario reactivo.
+ //FormControl = Controlador de cada dato ingresado en el formulario
+// Se crea un nuevo formulario reactivo usando FormGroup
   nuevoFormulario = new FormGroup ({
     email: new FormControl("",Validators.required),
     nombre: new FormControl ("",Validators.required),
     contraseña: new FormControl("", Validators.required),
+    apellido: new FormControl("",Validators.required)
   });
   
   /**  
@@ -45,7 +48,7 @@ export class NewProduct {
     if(this.nuevoFormulario.valid){
       const nuevoFormulario: Registrarse = {
         nombre:this.nuevoFormulario.value.nombre!,
-        /* apellido: this.nuevoFormulario.value.apellido!, */
+        apellido: this.nuevoFormulario.value.apellido!, 
         email: this.nuevoFormulario.value.email!,
         contraseña: this.nuevoFormulario.value.contraseña!
       
